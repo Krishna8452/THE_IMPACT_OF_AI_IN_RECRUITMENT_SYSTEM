@@ -1,0 +1,151 @@
+{
+  "job_role": {
+    "AI Researcher": {
+      "n": 257,
+      "selection_rate": 0.8171,
+      "true_rate": 0.8171,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Cybersecurity Analyst": {
+      "n": 255,
+      "selection_rate": 0.7922,
+      "true_rate": 0.7922,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Data Scientist": {
+      "n": 255,
+      "selection_rate": 0.8039,
+      "true_rate": 0.8039,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Software Engineer": {
+      "n": 233,
+      "selection_rate": 0.8369,
+      "true_rate": 0.8369,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "education": {
+    "B.Sc": {
+      "n": 205,
+      "selection_rate": 0.7902,
+      "true_rate": 0.7902,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "B.Tech": {
+      "n": 200,
+      "selection_rate": 0.83,
+      "true_rate": 0.83,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "M.Tech": {
+      "n": 198,
+      "selection_rate": 0.798,
+      "true_rate": 0.798,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "MBA": {
+      "n": 202,
+      "selection_rate": 0.8168,
+      "true_rate": 0.8168,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PhD": {
+      "n": 195,
+      "selection_rate": 0.8256,
+      "true_rate": 0.8256,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "experience_band": {
+    "0\u20132 yrs": {
+      "n": 273,
+      "selection_rate": 0.4176,
+      "true_rate": 0.4176,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "3\u20135 yrs": {
+      "n": 281,
+      "selection_rate": 0.8968,
+      "true_rate": 0.8968,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "6\u201310 yrs": {
+      "n": 446,
+      "selection_rate": 1.0,
+      "true_rate": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "fairness_summary": {
+    "job_role": {
+      "demographic_parity_difference": 0.0447,
+      "disparate_impact_ratio": 0.9466,
+      "equal_opportunity_difference": 0.0,
+      "selection_rates": {
+        "AI Researcher": 0.8171,
+        "Cybersecurity Analyst": 0.7922,
+        "Data Scientist": 0.8039,
+        "Software Engineer": 0.8369
+      },
+      "dpd_acceptable": true,
+      "dir_acceptable": true,
+      "highest_rate_group": "Software Engineer",
+      "lowest_rate_group": "Cybersecurity Analyst"
+    },
+    "education": {
+      "demographic_parity_difference": 0.0398,
+      "disparate_impact_ratio": 0.952,
+      "equal_opportunity_difference": 0.0,
+      "selection_rates": {
+        "B.Sc": 0.7902,
+        "B.Tech": 0.83,
+        "M.Tech": 0.798,
+        "MBA": 0.8168,
+        "PhD": 0.8256
+      },
+      "dpd_acceptable": true,
+      "dir_acceptable": true,
+      "highest_rate_group": "B.Tech",
+      "lowest_rate_group": "B.Sc"
+    },
+    "experience_band": {
+      "demographic_parity_difference": 0.5824,
+      "disparate_impact_ratio": 0.4176,
+      "equal_opportunity_difference": 0.0,
+      "selection_rates": {
+        "0\u20132 yrs": 0.4176,
+        "3\u20135 yrs": 0.8968,
+        "6\u201310 yrs": 1.0
+      },
+      "dpd_acceptable": false,
+      "dir_acceptable": false,
+      "highest_rate_group": "6\u201310 yrs",
+      "lowest_rate_group": "0\u20132 yrs"
+    }
+  }
+}

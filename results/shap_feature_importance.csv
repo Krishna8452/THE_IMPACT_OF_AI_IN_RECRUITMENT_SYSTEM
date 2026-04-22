@@ -1,0 +1,28 @@
+feature,display_name,mean_abs_shap
+ai_score,ai_score,0.5
+experience_years,Years of Experience,0.0
+skill_leadership,Leadership Skill,0.0
+exp_x_edu,Experience × Education,0.0
+skill_nlp,NLP Skill,0.0
+skill_statistics,Statistics Skill,0.0
+skill_c++,C++ Skill,0.0
+skill_javascript,JavaScript Skill,0.0
+skill_aws,AWS Skill,0.0
+skill_tensorflow,TensorFlow Skill,0.0
+skill_r,R Skill,0.0
+skill_excel,Excel Skill,0.0
+skill_deep_learning,Deep Learning Skill,0.0
+skill_project_management,Project Management,0.0
+skill_communication,Communication Skill,0.0
+education_level,Education Level,0.0
+skill_data_analysis,Data Analysis Skill,0.0
+skill_machine_learning,Machine Learning Skill,0.0
+skill_sql,SQL Skill,0.0
+skill_java,Java Skill,0.0
+skill_python,Python Skill,0.0
+total_skills,Total Skills Listed,0.0
+job_role_rank,Job Role Level,0.0
+salary_expectation_k,Salary Expectation (K),0.0
+projects_count,Projects Completed,0.0
+certifications_count,Number of Certifications,0.0
+cert_x_proj,Certifications × Projects,0.0
