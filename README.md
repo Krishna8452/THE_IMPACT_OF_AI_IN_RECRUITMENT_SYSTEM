@@ -49,7 +49,7 @@ python dashboard/app.py
 
 ## Using the Kaggle Dataset
 
-If using the real Kaggle dataset instead of synthetic data:
+Using the real Kaggle dataset:
 https://www.kaggle.com/datasets/mdtalhask/ai-powered-resume-screening-dataset-2025
 
 1. Download and save as `data/kaggle_resumes.csv`
