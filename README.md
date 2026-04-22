@@ -2,47 +2,6 @@
 ### Dissertation: AI in Recruitment System
 **Student:** Krishna Chaudhary | **ID:** 2912392 | **Module:** CN7000
 
----
-
-## Project Structure
-
-```
-recruitment/
-├── data/
-│   └── synthetic_resumes.csv       ← auto-generated dataset
-├── models/
-│   ├── best_model.pkl              ← trained ML model
-│   ├── scaler.pkl                  ← feature scaler
-│   ├── feature_names.json
-│   └── model_info.json
-├── results/
-│   ├── model_comparison.png        ← AI vs baseline chart
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   ├── feature_importance.png
-│   ├── fairness_selection_rates.png
-│   ├── fairness_heatmap.png
-│   ├── shap_summary.png
-│   ├── shap_bar_importance.png
-│   └── fairness_report.json
-├── src/
-│   ├── data_generator.py           ← synthetic dataset generator
-│   ├── preprocessing/
-│   │   └── resume_processor.py     ← NLP feature extraction
-│   ├── ml/
-│   │   └── ranking_engine.py       ← ML training + evaluation
-│   ├── fairness/
-│   │   └── fairness_evaluator.py   ← bias detection
-│   └── explainability/
-│       └── shap_explainer.py       ← SHAP explanations
-├── dashboard/
-│   └── app.py                      ← Flask web UI
-├── run_pipeline.py                 ← runs everything
-└── requirements.txt
-```
-
----
-
 ## Setup
 
 ```bash
@@ -56,9 +15,6 @@ pip install -r requirements.txt
 
 # 3. Download spaCy model (for NLP)
 python -m spacy download en_core_web_sm
-```
-
----
 
 ## Run Complete Pipeline
 
@@ -76,19 +32,16 @@ python dashboard/app.py
 ## Run Individual Steps
 
 ```bash
-# Step 1: Generate dataset
-python src/data_generator.py
-
-# Step 2: Train models
+# Step 1: Train models
 python src/ml/ranking_engine.py
 
-# Step 3: Fairness evaluation
+# Step 2: Fairness evaluation
 python src/fairness/fairness_evaluator.py
 
-# Step 4: SHAP explainability
+# Step 3: SHAP explainability
 python src/explainability/shap_explainer.py
 
-# Step 5: Dashboard
+# Step 4: Dashboard
 python dashboard/app.py
 ```
 
